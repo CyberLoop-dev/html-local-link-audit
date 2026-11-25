@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "html-local-link-audit"
+version = "1.0.0"
+description = "Read-only local HTML link and fragment checker"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+html-link-audit = "html_link_audit:main"
+
+[tool.setuptools]
+py-modules = ["html_link_audit"]
